@@ -1,6 +1,19 @@
 # Every CMake project needs to start with these two lines
 cmake_minimum_required(VERSION 3.28) # This is the minimum version of CMake required
 project(Homework VERSION 1.0) # This is the name of the project and its version
+find_package(Python REQUIRED) # This line tells CMake to find Python
+# include(FetchContent) # If not included already
+
+# FetchContent_Declare(sciplot_content
+#   GIT_REPOSITORY https://github.com/sciplot/sciplot.git
+#   GIT_TAG master)
+
+# FetchContent_GetProperties(sciplot_content)
+# if(NOT sciplot_content_POPULATED)
+#   FetchContent_Populate(sciplot_content)
+# endif()
+
+# include_directories(${sciplot_content_SOURCE_DIR})
 
 set(CMAKE_CXX_STANDARD 20) # This sets the C++ standard to C++20
 set(CMAKE_CXX_STANDARD_REQUIRED True) # This tells CMake that the stdandard must be available

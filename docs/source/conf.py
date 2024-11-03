@@ -2,7 +2,7 @@ import os
 
 # -- Project information -----------------------------------------------------
 
-project = "Homework: Session 13-14-15"
+project = "Homework: Session 17-19"
 author = "Rodrigo Sagastegui"
 copyright = "2024, rorosaga"
 

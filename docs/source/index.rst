@@ -1,54 +1,22 @@
-Homework: Session 13-14-15 Documentation
+Homework: Session 17-19 Documentation
 =========================================
 
-Documentation for sessions 13 to 15 Homework assignment.
+Documentation for sessions 17 to 19 Homework assignment.
 
 ----------
-Session 13
+Session 17
 ----------
-MyType Documentation
+
 ========================
-.. doxygenclass:: homework::MyType
-   :project: Homework: Session 13-14-15
+.. doxygennamespace:: homework17
+   :project: Homework: Session 17-19
    :members:
 
-Split Documentation
+----------
+Session 19
+----------
+
 ========================
-.. doxygenfunction:: homework::split
-   :project: Homework: Session 13-14-15
-
-----------
-Session 14
-----------
-Sum Documentation
-========================
-.. doxygenfunction:: homework::sum_elements
-   :project: Homework: Session 13-14-15
-
-.. doxygenfunction:: homework::make_tuple
-   :project: Homework: Session 13-14-15
-
-----------
-Session 15
-----------
-Pair Documentation
-========================
-.. doxygenclass:: homework::Pair
-   :project: Homework: Session 13-14-15
-
-Transform Documentation
-========================
-.. doxygenfunction:: homework::transform
-   :project: Homework: Session 13-14-15
-
-IsRawPointer Documentation
-==========================
-.. doxygenstruct:: homework::IsRawPointer
-   :project: Homework: Session 13-14-15
-
-FlexibleContainer Documentation
-================================
-.. doxygenclass:: homework::FlexibleContainer
-   :project: Homework: Session 13-14-15
-
-----------
+.. doxygennamespace:: homework19
+   :project: Homework: Session 17-19
+   :members:
