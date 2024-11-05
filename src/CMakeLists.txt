@@ -10,10 +10,12 @@ include_directories(${CMAKE_SOURCE_DIR}/include)
 # You can also add any stand alone executables
 # add_executable(example main.cpp) # Will make a binary called "example" inside build/bin using main.cpp
 add_executable(main_zipfs_containers main_zipfs_containers.cpp)
-add_library(main_zipfs_containers_lib OBJECT main_zipfs_containers.cpp)
+add_library(zipfs_containers_lib SHARED zipfs_containers.cpp)
+target_link_libraries(main_zipfs_containers zipfs_containers_lib)
 
 add_executable(main_zipfs_algorithms main_zipfs_algorithms.cpp)
-add_library(main_zipfs_algorithms_lib OBJECT main_zipfs_algorithms.cpp)
+add_library(zipfs_algorithms_lib SHARED zipfs_algorithms.cpp)
+target_link_libraries(main_zipfs_algorithms zipfs_algorithms_lib)
 
 # target_include_directories(main_zipfs_containers PUBLIC ${sciplot_content_SOURCE_DIR}/include)
 # target_link_libraries(main_zipfs_containers PUBLIC sciplot)

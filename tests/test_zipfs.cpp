@@ -27,7 +27,7 @@ TEST(ZipfsLawTests, SortFrequencies) {
     std::multimap<int, std::string, std::greater<>> sortedFreq = homework17::sortFrequencies(freq);
 
     auto it = sortedFreq.begin();
-    EXPECT_EQ(it->first, 3); 
+    EXPECT_EQ(it->first, 3);
     EXPECT_EQ(it->second, "hello");
     ++it;
     EXPECT_EQ(it->first, 2);

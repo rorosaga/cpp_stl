@@ -21,22 +21,14 @@ include_directories(${CMAKE_SOURCE_DIR}/include)
 # Add the test executables
 add_executable(test_zipfs ${CMAKE_SOURCE_DIR}/tests/test_zipfs.cpp)
 
-add_library(zipfs_lib SHARED ${CMAKE_SOURCE_DIR}/src/main_zipfs_containers.cpp)
-
 # Link the test executables with the corresponding libraries and GTest
 target_link_libraries(
   test_zipfs
-  zipfs_lib
+  zipfs_containers_lib
+  zipfs_algorithms_lib
   GTest::gtest_main
 )
 
 # Discover the tests in both test executables
-gtest_discover_tests(test_zipfs)
-
-# Copy any necessary test files to the build directory
-# add_custom_command(
-#     TARGET test_zipfs POST_BUILD
-#     COMMAND ${CMAKE_COMMAND} -E copy
-#             ${CMAKE_SOURCE_DIR}/tests/test.txt
-#             ${CMAKE_BINARY_DIR}
-# )
+# Tell Gtest to run this tests from within the current directory
+gtest_discover_tests(test_zipfs WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
