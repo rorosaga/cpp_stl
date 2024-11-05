@@ -9,7 +9,7 @@ Session 17
 
 ========================
 .. doxygennamespace:: homework17
-   :project: Homework: Session 17-19
+   :project: Homework
    :members:
 
 ----------
@@ -18,5 +18,5 @@ Session 19
 
 ========================
 .. doxygennamespace:: homework19
-   :project: Homework: Session 17-19
+   :project: Homework
    :members:

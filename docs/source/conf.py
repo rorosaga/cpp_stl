@@ -2,7 +2,7 @@ import os
 
 # -- Project information -----------------------------------------------------
 
-project = "Homework: Session 17-19"
+project = "Homework"
 author = "Rodrigo Sagastegui"
 copyright = "2024, rorosaga"
 
@@ -22,5 +22,5 @@ html_static_path = ['_static']
 # -- Breathe Configuration ---------------------------------------------------
 
 breathe_projects = {
-    "Homework: Session 13-14-15": os.path.join(os.path.dirname(__file__), "../../build/docs/doxygen/xml")
+    "Homework": os.path.join(os.path.dirname(__file__), "../../build/docs/doxygen/xml")
 }

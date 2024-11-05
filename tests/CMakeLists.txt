@@ -34,9 +34,9 @@ target_link_libraries(
 gtest_discover_tests(test_zipfs)
 
 # Copy any necessary test files to the build directory
-add_custom_command(
-    TARGET test_zipfs POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E copy
-            ${CMAKE_SOURCE_DIR}/tests/test.txt
-            ${CMAKE_BINARY_DIR}
-)
+# add_custom_command(
+#     TARGET test_zipfs POST_BUILD
+#     COMMAND ${CMAKE_COMMAND} -E copy
+#             ${CMAKE_SOURCE_DIR}/tests/test.txt
+#             ${CMAKE_BINARY_DIR}
+# )
